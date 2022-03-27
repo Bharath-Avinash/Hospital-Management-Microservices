@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DoctorApplicationTests" project="Doctor" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.example.demo.DoctorApplicationTests" time="0.061" displayname="DoctorApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.example.demo.DoctorApplicationTests]">
+    <testcase name="getAllDoctors" classname="com.example.demo.DoctorApplicationTests" time="0.053" displayname="getAllDoctors()" uniqueid="[engine:junit-jupiter]/[class:com.example.demo.DoctorApplicationTests]/[method:getAllDoctors()]"/>
+    <testcase name="contextLoads" classname="com.example.demo.DoctorApplicationTests" time="0.005" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.example.demo.DoctorApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,27 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DoctorApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DoctorApplication.class, args);
+	}
+	
+	@Bean
+	public CorsFilter corsFilter() {
+
+	    UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+	    CorsConfiguration config = new CorsConfiguration();
+	    config.setAllowCredentials(true); 
+	    config.addAllowedOrigin("http://domain1.com");
+	    config.addAllowedHeader("*");
+	    config.addAllowedMethod("GET");
+	    config.addAllowedMethod("PUT");
+	    source.registerCorsConfiguration("/**", config);
+	    return new CorsFilter(source);
+	}
+
+}
